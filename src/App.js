@@ -50,8 +50,22 @@ const filteredCoins = coins.filter(
   </div>
 </nav>
 <div>
-{filteredCoins.map(coin=>{
-        return(
+
+        {/* return(<> */}
+        <>
+       <div className="coin-container">
+        <div className='coin-row'>
+          <div className='coin'> Sym</div>
+          <div className='coin-price'>Price</div>
+          <div className='coin-high'>high</div>
+          <div className='coin-percent'>change(%)</div>
+          <div className='coin-ath'>ATH</div>
+          </div>
+          </div>
+
+
+          {filteredCoins.map(coin=>{
+            return(
           <Coin 
           key={coin.id} 
           name={coin.name} 
@@ -64,8 +78,12 @@ const filteredCoins = coins.filter(
            ath = {coin.ath}
            highToday = { coin.high_24h}
           />
-        );
-      })}
+            );
+        })}
+
+          </>
+      
+     
 </div>
       <Footer />
 
