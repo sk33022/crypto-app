@@ -22,7 +22,7 @@ const Coin = (props) => {
                 }
                
                 <p className="coin-ath">
-                    ATH: ${props.ath.toLocaleString()}
+                     ${props.ath.toLocaleString()}
                 </p>
                 {/* <p className="coin-marketcap">
                   Vol.  ${props.volume.toLocaleString()}
