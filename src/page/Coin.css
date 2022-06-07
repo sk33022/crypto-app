@@ -39,6 +39,7 @@
 }
 .coin-price{
     width:110px;
+    margin-right: 10%;
 }
 .coin-volume{
     width: 230px;
@@ -65,5 +66,5 @@
 }
 
 .coin-high{ 
-    margin: auto;
+    width:110px;
 }
